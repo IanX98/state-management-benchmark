@@ -1,39 +1,52 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchLargeData } from './store/dataSlice';
+import {
+  fetchSmallData,
+  fetchMediumData,
+  fetchLargeData,
+  clearData
+} from './store/dataSlice';
 
 const App = () => {
   const dispatch = useDispatch();
   const { items, status } = useSelector((state) => state.data);
 
-  useEffect(() => {
-    dispatch(fetchLargeData());
-  }, [dispatch]);
-
   return (
     <div>
-      <h1>Large Dataset</h1>
-      {status === 'loading' && <p>Loading...</p>}
-      <table id="data-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Model</th>
-            <th>Plate</th>
-            <th>Capacity</th>
-            <th>Last Maintenance</th>
-          </tr>
-        </thead>
-        <tbody> {items.map((item, index) => (
-           <tr key={index}> 
-            <td>{item.id ?? '-'}</td> 
-            <td>{item.model ?? '-'}</td> 
-            <td>{item.plate ?? '-'}</td> 
-            <td>{item.capacity ?? '-'}</td> 
-            <td>{item.lastMaintenance ?? '-'}</td> 
-           </tr> ))} 
-        </tbody>
-      </table>
+      <h1>React Data Viewer</h1>
+      <div style={{ marginBottom: '16px' }}>
+        <button onClick={() => dispatch(fetchSmallData())}>Carregar Small</button>
+        <button onClick={() => dispatch(fetchMediumData())}>Carregar Medium</button>
+        <button onClick={() => dispatch(fetchLargeData())}>Carregar Large</button>
+        <button onClick={() => dispatch(clearData())}>Limpar</button>
+      </div>
+
+      {status === 'loading' && <p>Carregando dados...</p>}
+
+      {items.length > 0 && (
+        <table id="data-table" border="1" cellPadding="5">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Model</th>
+              <th>Plate</th>
+              <th>Capacity</th>
+              <th>Last Maintenance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((item, index) => (
+              <tr key={index}>
+                <td>{item.id}</td>
+                <td>{item.model}</td>
+                <td>{item.plate}</td>
+                <td>{item.capacity}</td>
+                <td>{item.lastMaintenance}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };
