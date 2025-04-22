@@ -1,12 +1,14 @@
-import Header from '../components/Header';
-import DataTable from '../components/DataTable';
-import LoadRowsRedux from '../components/LoadRowsRedux';
-import ActionButtons from '../components/ActionButtons';
+import CreateRows from '../components/CreateRows';
 
 const Dashboard = () => {
+
   return (
     <div>
-      <LoadRowsRedux/>
+      <CreateRows />
+      {/* Aqui futuramente podemos colocar: */}
+      {/* {selectedAction === 'criar' && <LoadRows />} */}
+      {/* {selectedAction === 'deletar' && <DeleteRows />} */}
+      {/* {selectedAction === 'editar' && <EditRows />} */}
     </div>
   );
 };
