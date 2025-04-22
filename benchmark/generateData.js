@@ -16,6 +16,7 @@ const generateBusData = (count) => {
 };
 
 fs.writeFileSync('./benchmark/data/large-dataset.json', JSON.stringify(generateBusData(10000)));
+fs.writeFileSync('./benchmark/data/medium-dataset.json', JSON.stringify(generateBusData(1000)));
 fs.writeFileSync('./benchmark/data/small-dataset.json', JSON.stringify(generateBusData(100)));
 
 console.log('✅ Dados gerados com sucesso');
