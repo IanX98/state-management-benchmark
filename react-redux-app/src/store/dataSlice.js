@@ -1,34 +1,23 @@
+import { faker } from '@faker-js/faker';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchSingleData = createAsyncThunk(
-  'data/singleSmall',
-  async () => {
-    const response = await fetch('/single-dataset.json');
-    return response.json();
-  }
-);
+export const generateLocalRows = createAsyncThunk(
+  'data/generateLocalRows',
+  // eslint-disable-next-line no-unused-vars
+  async (amount = 1000, thunkAPI) => {
+    const start = performance.now();
 
-export const fetchSmallData = createAsyncThunk(
-  'data/fetchSmall',
-  async () => {
-    const response = await fetch('/small-dataset.json');
-    return response.json();
-  }
-);
+    const rows = Array.from({ length: amount }, (_, i) => ({
+      id: i + 1,
+      model: faker.vehicle.model(),
+      plate: faker.vehicle.vin(),
+      capacity: faker.number.int({ min: 2, max: 7 }),
+      lastMaintenance: faker.date.past().toLocaleDateString(),
+    }));
 
-export const fetchMediumData = createAsyncThunk(
-  'data/fetchMedium',
-  async () => {
-    const response = await fetch('/medium-dataset.json');
-    return response.json();
-  }
-);
+    const end = performance.now();
 
-export const fetchLargeData = createAsyncThunk(
-  'data/fetchLarge',
-  async () => {
-    const response = await fetch('/large-dataset.json');
-    return response.json();
+    return { items: rows, loadTime: end - start };
   }
 );
 
@@ -36,46 +25,29 @@ const dataSlice = createSlice({
   name: 'data',
   initialState: {
     items: [],
-    status: 'idle'
+    status: 'idle',
+    loadTime: null,
   },
   reducers: {
     clearData(state) {
       state.items = [];
       state.status = 'idle';
-    }
+      state.loadTime = null;
+    },
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchSingleData.pending, (state) => {
+      .addCase(generateLocalRows.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchSmallData.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchMediumData.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchLargeData.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchSingleData.fulfilled, (state, action) => {
+      .addCase(generateLocalRows.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.items = action.payload;
-      })
-      .addCase(fetchSmallData.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.items = action.payload;
-      })
-      .addCase(fetchMediumData.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.items = action.payload;
-      })
-      .addCase(fetchLargeData.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.items = action.payload;
+        state.items = action.payload.items;
+        state.loadTime = action.payload.loadTime;
       });
-  }
+  },
 });
 
 export const { clearData } = dataSlice.actions;
+
 export default dataSlice.reducer;

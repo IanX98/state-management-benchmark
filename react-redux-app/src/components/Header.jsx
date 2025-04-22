@@ -1,8 +1,8 @@
-const Header = ({ onSelectDataset }) => (
+const Header = ( ) => (
     <header style={{ marginBottom: '1rem' }}>
-      <button onClick={() => onSelectDataset('small')}>Small</button>
-      <button onClick={() => onSelectDataset('medium')}>Medium</button>
-      <button onClick={() => onSelectDataset('large')}>Large</button>
+      <button >Small</button>
+      <button >Medium</button>
+      <button >Large</button>
     </header>
   );
   
