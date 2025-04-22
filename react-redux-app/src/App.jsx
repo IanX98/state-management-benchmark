@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
+  fetchSingleData,
   fetchSmallData,
   fetchMediumData,
   fetchLargeData,
@@ -15,9 +16,10 @@ const App = () => {
     <div>
       <h1>React Data Viewer</h1>
       <div style={{ marginBottom: '16px' }}>
-        <button onClick={() => dispatch(fetchSmallData())}>Carregar Small</button>
-        <button onClick={() => dispatch(fetchMediumData())}>Carregar Medium</button>
-        <button onClick={() => dispatch(fetchLargeData())}>Carregar Large</button>
+        <button onClick={() => dispatch(fetchSingleData())}>Carregar 1</button>
+        <button onClick={() => dispatch(fetchSmallData())}>Carregar 100</button>
+        <button onClick={() => dispatch(fetchMediumData())}>Carregar 1000</button>
+        <button onClick={() => dispatch(fetchLargeData())}>Carregar 10000</button>
         <button onClick={() => dispatch(clearData())}>Limpar</button>
       </div>
 

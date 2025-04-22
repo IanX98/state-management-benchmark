@@ -1,5 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+export const fetchSingleData = createAsyncThunk(
+  'data/singleSmall',
+  async () => {
+    const response = await fetch('/single-dataset.json');
+    return response.json();
+  }
+);
+
 export const fetchSmallData = createAsyncThunk(
   'data/fetchSmall',
   async () => {
@@ -38,6 +46,9 @@ const dataSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
+      .addCase(fetchSingleData.pending, (state) => {
+        state.status = 'loading';
+      })
       .addCase(fetchSmallData.pending, (state) => {
         state.status = 'loading';
       })
@@ -46,6 +57,10 @@ const dataSlice = createSlice({
       })
       .addCase(fetchLargeData.pending, (state) => {
         state.status = 'loading';
+      })
+      .addCase(fetchSingleData.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.items = action.payload;
       })
       .addCase(fetchSmallData.fulfilled, (state, action) => {
         state.status = 'succeeded';
