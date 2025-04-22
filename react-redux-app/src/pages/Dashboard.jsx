@@ -1,4 +1,4 @@
-import CreateRows from '../components/CreateRows';
+import CreateRows from '../components/CreateRowsRedux';
 
 const Dashboard = () => {
 
