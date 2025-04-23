@@ -1,7 +1,8 @@
+import EditRows from '../components/EditRows';
 import CreateRows from '../components/CreateRows';
 import DeleteRows from '../components/DeleteRows';
+import SearchRow from '../components/SearchRandomOne';
 import DatasetLoader from '../components/DatasetLoader';
-import EditRows from '../components/EditRows';
 
 const Dashboard = () => {
 
@@ -11,10 +12,7 @@ const Dashboard = () => {
       <DatasetLoader />
       <DeleteRows />
       <EditRows />
-      {/* Aqui futuramente podemos colocar: */}
-      {/* {selectedAction === 'criar' && <LoadRows />} */}
-      {/* {selectedAction === 'deletar' && <DeleteRows />} */}
-      {/* {selectedAction === 'editar' && <EditRows />} */}
+      <SearchRow />
     </div>
   );
 };
