@@ -1,10 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { generateLocalRows } from '../store/dataSlice';
 import DataTable from './DataTable';
+import { useDispatch, useSelector } from 'react-redux';
+import { generateLocalRows } from '../store/createSlice';
 
 const CreateRows = () => {
   const dispatch = useDispatch();
-  const { items, status, loadTime } = useSelector((state) => state.data);
+  const { items, status, loadTime } = useSelector((state) => state.create);
 
   const handleGenerate = (amount) => {
     dispatch(generateLocalRows(amount));

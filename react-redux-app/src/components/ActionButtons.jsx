@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { generateLocalRows, clearData } from '../store/dataSlice';
+import { generateLocalRows, clearData } from '../store/createSlice';
 
 const ActionButtons = ({ selectedAction }) => {
   const dispatch = useDispatch();

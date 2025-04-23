@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import dataReducer from './dataSlice';
+import readReducer from './readSlice';
+import createReducer from './createSlice';
 
 export const store = configureStore({
   reducer: {
-    data: dataReducer,
+    read: readReducer,
+    create: createReducer,
   },
 });
