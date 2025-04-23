@@ -1,4 +1,5 @@
 import CreateRows from '../components/CreateRows';
+import DeleteRows from '../components/DeleteRows';
 import DatasetLoader from '../components/DatasetLoader';
 
 const Dashboard = () => {
@@ -7,6 +8,7 @@ const Dashboard = () => {
     <div>
       <CreateRows />
       <DatasetLoader />
+      <DeleteRows />
       {/* Aqui futuramente podemos colocar: */}
       {/* {selectedAction === 'criar' && <LoadRows />} */}
       {/* {selectedAction === 'deletar' && <DeleteRows />} */}
