@@ -24,7 +24,6 @@ const editSlice = createSlice({
       const start = performance.now();
 
       for (let i = 0; i < count && i < state.items.length; i++) {
-        console.log(state.items[i])
         state.items[i] = {
           ...state.items[i],
           model: faker.vehicle.model(),

@@ -1,0 +1,30 @@
+<div>
+  <h3>Leitura de Registros</h3>
+  <button (click)="load(1)">Ler 1 linha</button>
+  <button (click)="load(100)">Ler 100 linhas</button>
+  <button (click)="load(1000)">Ler 1000 linhas</button>
+  <button (click)="load(10000)">Ler 10000 linhas</button>
+
+  <p *ngIf="loadTime">Tempo de carregamento: {{ loadTime.toFixed(2) }} ms</p>
+
+  <table *ngIf="vehicles$ | async as vehicles">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Modelo</th>
+        <th>Placa</th>
+        <th>Capacidade</th>
+        <th>Última Manutenção</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of vehicles">
+        <td>{{ v.id }}</td>
+        <td>{{ v.model }}</td>
+        <td>{{ v.plate }}</td>
+        <td>{{ v.capacity }}</td>
+        <td>{{ v.lastMaintenance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

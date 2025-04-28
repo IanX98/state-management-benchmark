@@ -1,5 +1,9 @@
 import { createReducer, on } from '@ngrx/store';
-import { createVehicle } from '../actions/vehicle.actions';
+import {
+  editVehicles,
+  createVehicle,
+  loadVehiclesFromJson,
+} from '../actions/vehicle.actions';
 import { Vehicle } from '../../models/vehicle.model';
 
 export interface VehicleState {
@@ -15,5 +19,13 @@ export const vehicleReducer = createReducer(
   on(createVehicle, (state, { vehicle }) => ({
     ...state,
     vehicles: [...state.vehicles, vehicle],
+  })),
+  on(loadVehiclesFromJson, (state, { vehicles }) => ({
+    ...state,
+    vehicles: [...vehicles],
+  })),
+  on(editVehicles, (state, { vehicles }) => ({
+    ...state,
+    vehicles: vehicles,
   }))
 );

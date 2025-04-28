@@ -1,0 +1,702 @@
+[
+    {
+      "id": 1,
+      "plate": "QIS0F7Y3T6V4HNXRV",
+      "model": "F-150",
+      "capacity": 50,
+      "lastMaintenance": "2024-03-28T13:06:57"
+    },
+    {
+      "id": 2,
+      "plate": "VED0N2H7D9P4CJGOA",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2023-12-01T23:14:19"
+    },
+    {
+      "id": 3,
+      "plate": "FNZ4S7Y6X4C3HKKCP",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2024-07-12T23:06:33"
+    },
+    {
+      "id": 4,
+      "plate": "SHR2V6Y6L1L2FBBZZ",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2024-06-28T00:30:48"
+    },
+    {
+      "id": 5,
+      "plate": "YTI0T8E7D4E8DAABA",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2024-02-22T22:42:34"
+    },
+    {
+      "id": 6,
+      "plate": "IUS1A6J9T5V1GVLZW",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2025-02-19T21:32:19"
+    },
+    {
+      "id": 7,
+      "plate": "BJN8E8J0S7U8URYKQ",
+      "model": "F-150",
+      "capacity": 50,
+      "lastMaintenance": "2024-11-09T03:54:12"
+    },
+    {
+      "id": 8,
+      "plate": "URI1H7H4D8O1OZUTO",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2024-12-08T17:19:56"
+    },
+    {
+      "id": 9,
+      "plate": "RIM6K3N9Z7X3TIKJE",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2024-04-24T15:20:51"
+    },
+    {
+      "id": 10,
+      "plate": "PGW2W2Z6O3O1CILLC",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2023-11-03T21:09:18"
+    },
+    {
+      "id": 11,
+      "plate": "VQV9J3P7G7C9LYTBE",
+      "model": "F-150",
+      "capacity": 30,
+      "lastMaintenance": "2023-06-09T15:22:35"
+    },
+    {
+      "id": 12,
+      "plate": "VVJ1A1R1C6S5VHIST",
+      "model": "Sprinter",
+      "capacity": 60,
+      "lastMaintenance": "2023-12-14T03:13:51"
+    },
+    {
+      "id": 13,
+      "plate": "YFO1G5X4M8D2HXIUS",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 20,
+      "lastMaintenance": "2024-06-06T03:10:44"
+    },
+    {
+      "id": 14,
+      "plate": "WPG1Z7R9U2R1TZECY",
+      "model": "Volare W9",
+      "capacity": 50,
+      "lastMaintenance": "2023-10-29T19:37:07"
+    },
+    {
+      "id": 15,
+      "plate": "FFM0B5E2H5J7PJDXJ",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2024-02-17T03:18:29"
+    },
+    {
+      "id": 16,
+      "plate": "MSE1D3R1Z4D6IIBCW",
+      "model": "Sprinter",
+      "capacity": 40,
+      "lastMaintenance": "2024-01-27T14:22:30"
+    },
+    {
+      "id": 17,
+      "plate": "ICH0R7O9F5J3OLQXX",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2023-10-04T15:00:53"
+    },
+    {
+      "id": 18,
+      "plate": "RXT9M4G4S6D9OSAEX",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2023-07-14T01:21:00"
+    },
+    {
+      "id": 19,
+      "plate": "BDZ1C0D4I5C4TJEOH",
+      "model": "Volare W9",
+      "capacity": 50,
+      "lastMaintenance": "2024-02-20T10:17:28"
+    },
+    {
+      "id": 20,
+      "plate": "QFP0S7Y6K4I1FBUYJ",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2025-01-22T17:13:40"
+    },
+    {
+      "id": 21,
+      "plate": "JXU5A3X8K9O4VKCLG",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2024-05-16T06:53:01"
+    },
+    {
+      "id": 22,
+      "plate": "ZCZ2C5R7P3N3TTKAH",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2024-09-08T21:23:02"
+    },
+    {
+      "id": 23,
+      "plate": "ATV8E2C8S6G0KGFJQ",
+      "model": "F-150",
+      "capacity": 20,
+      "lastMaintenance": "2024-04-18T03:24:26"
+    },
+    {
+      "id": 24,
+      "plate": "SQV8G9O3T0S3PJUYN",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2024-03-23T09:53:56"
+    },
+    {
+      "id": 25,
+      "plate": "NQL3U8Q3T4E7DHNFM",
+      "model": "Volare W9",
+      "capacity": 30,
+      "lastMaintenance": "2024-05-18T00:05:53"
+    },
+    {
+      "id": 26,
+      "plate": "HER7I5Q7W5Q5FCSVI",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2023-10-25T15:24:49"
+    },
+    {
+      "id": 27,
+      "plate": "MJK1Q1F5C6E0YXVMM",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2023-05-17T10:28:58"
+    },
+    {
+      "id": 28,
+      "plate": "VTA8E7D1S5F3EGGOA",
+      "model": "Sprinter",
+      "capacity": 60,
+      "lastMaintenance": "2023-09-09T07:39:46"
+    },
+    {
+      "id": 29,
+      "plate": "RRK8M3S6D3I7RUBDR",
+      "model": "Volare W9",
+      "capacity": 30,
+      "lastMaintenance": "2023-07-19T15:33:01"
+    },
+    {
+      "id": 30,
+      "plate": "CKR1J6X3G0P0CZXCS",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2024-04-21T16:01:18"
+    },
+    {
+      "id": 31,
+      "plate": "ZHK2S2E3F5K4YYWPU",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2024-08-08T22:25:38"
+    },
+    {
+      "id": 32,
+      "plate": "FDO4C8F7P3W7BAHOO",
+      "model": "F-150",
+      "capacity": 30,
+      "lastMaintenance": "2025-03-03T03:36:43"
+    },
+    {
+      "id": 33,
+      "plate": "SRX9Y2G0U0X3JIHOD",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2023-05-11T01:44:10"
+    },
+    {
+      "id": 34,
+      "plate": "JUK8W5K3K0V7CRTTA",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2024-09-28T03:58:34"
+    },
+    {
+      "id": 35,
+      "plate": "OHZ7Y2H1K2H2DGLVZ",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2024-08-08T04:16:11"
+    },
+    {
+      "id": 36,
+      "plate": "ZLW1L3I9D4K6VJKRW",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 60,
+      "lastMaintenance": "2024-03-17T02:48:57"
+    },
+    {
+      "id": 37,
+      "plate": "UVN5Q5I9Z2H6LVTXM",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 50,
+      "lastMaintenance": "2023-07-22T08:26:46"
+    },
+    {
+      "id": 38,
+      "plate": "OKL7B3V4X0Z4WNIUI",
+      "model": "Sprinter",
+      "capacity": 30,
+      "lastMaintenance": "2024-03-18T21:39:33"
+    },
+    {
+      "id": 39,
+      "plate": "OHY2N0O7W1B2EXUKS",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2024-10-27T18:38:07"
+    },
+    {
+      "id": 40,
+      "plate": "VLI0Q6L9L5V5SYGAC",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 60,
+      "lastMaintenance": "2024-07-15T06:28:55"
+    },
+    {
+      "id": 41,
+      "plate": "YWU2M8R5L6O8PLDLK",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2023-08-28T00:09:17"
+    },
+    {
+      "id": 42,
+      "plate": "JFD5B0F4C8J9DLWGG",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2024-12-05T23:15:36"
+    },
+    {
+      "id": 43,
+      "plate": "ZGC2H0Y0A5T9QTOFV",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2023-11-14T08:56:21"
+    },
+    {
+      "id": 44,
+      "plate": "RFA9M5O7H0R8FHWRC",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2023-10-02T15:30:48"
+    },
+    {
+      "id": 45,
+      "plate": "OFP2G9Z8L0B8RQKYV",
+      "model": "F-150",
+      "capacity": 50,
+      "lastMaintenance": "2024-06-23T10:33:46"
+    },
+    {
+      "id": 46,
+      "plate": "IDO3G2E2X3V8UVXAY",
+      "model": "Iveco Daily",
+      "capacity": 60,
+      "lastMaintenance": "2023-04-29T01:50:21"
+    },
+    {
+      "id": 47,
+      "plate": "ZQW1V1J0Y9P2TNRIH",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2025-02-26T15:50:09"
+    },
+    {
+      "id": 48,
+      "plate": "XAK0Y0W2X7H5PCFVB",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2024-05-13T17:04:53"
+    },
+    {
+      "id": 49,
+      "plate": "FFU1V7M6R6C7ZWBUP",
+      "model": "Sprinter",
+      "capacity": 20,
+      "lastMaintenance": "2023-06-17T06:10:31"
+    },
+    {
+      "id": 50,
+      "plate": "RYX5W1N5U5D1UCRRU",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2025-02-25T03:12:53"
+    },
+    {
+      "id": 51,
+      "plate": "VVR6Z7W7C4H2EPNCX",
+      "model": "Sprinter",
+      "capacity": 50,
+      "lastMaintenance": "2023-08-23T20:59:49"
+    },
+    {
+      "id": 52,
+      "plate": "ENG0I7A6G0I5PWYMQ",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2024-02-21T17:35:18"
+    },
+    {
+      "id": 53,
+      "plate": "APV6N8U3M7B0AIZXE",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 20,
+      "lastMaintenance": "2024-01-23T07:06:02"
+    },
+    {
+      "id": 54,
+      "plate": "RCT5L1D6U3T6VALXO",
+      "model": "Sprinter",
+      "capacity": 60,
+      "lastMaintenance": "2024-05-06T06:08:16"
+    },
+    {
+      "id": 55,
+      "plate": "YXU0M5Q9B0O5WPHIP",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 20,
+      "lastMaintenance": "2024-04-05T13:15:44"
+    },
+    {
+      "id": 56,
+      "plate": "PFA5O1H0J4N5LSCBU",
+      "model": "F-150",
+      "capacity": 60,
+      "lastMaintenance": "2024-02-27T23:30:48"
+    },
+    {
+      "id": 57,
+      "plate": "XRB0Y0J8Q4B7FCEZR",
+      "model": "F-150",
+      "capacity": 50,
+      "lastMaintenance": "2025-01-12T10:27:33"
+    },
+    {
+      "id": 58,
+      "plate": "VJA4L5E8M2T1DIUOZ",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2023-05-20T05:42:44"
+    },
+    {
+      "id": 59,
+      "plate": "IDG3G4T0X8C6JJWDQ",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2023-10-17T09:46:20"
+    },
+    {
+      "id": 60,
+      "plate": "WMQ8M0X4G6N4CEBUX",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2024-05-01T02:14:44"
+    },
+    {
+      "id": 61,
+      "plate": "RQJ5R5M9Y7B0JGHBZ",
+      "model": "F-150",
+      "capacity": 20,
+      "lastMaintenance": "2024-02-29T19:42:12"
+    },
+    {
+      "id": 62,
+      "plate": "OZF3L9L1X8E3KGDYG",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2023-10-20T06:25:31"
+    },
+    {
+      "id": 63,
+      "plate": "SVL1Q8L0R3O4BSYRK",
+      "model": "F-150",
+      "capacity": 40,
+      "lastMaintenance": "2023-06-23T13:55:09"
+    },
+    {
+      "id": 64,
+      "plate": "QYT0V7G1K7X9VBMWG",
+      "model": "F-150",
+      "capacity": 40,
+      "lastMaintenance": "2023-06-24T06:48:52"
+    },
+    {
+      "id": 65,
+      "plate": "RNL8O8C1K6P1SDIUR",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2025-01-12T18:25:24"
+    },
+    {
+      "id": 66,
+      "plate": "BTL6E0D6P5P9YYOAP",
+      "model": "F-150",
+      "capacity": 40,
+      "lastMaintenance": "2023-08-24T11:50:32"
+    },
+    {
+      "id": 67,
+      "plate": "UAN3E5H4K3J5HUZXO",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2024-03-02T10:20:32"
+    },
+    {
+      "id": 68,
+      "plate": "LCZ9Q9Y0Y3Y5TOUUN",
+      "model": "Sprinter",
+      "capacity": 30,
+      "lastMaintenance": "2023-08-13T23:01:04"
+    },
+    {
+      "id": 69,
+      "plate": "RXH0P9N3L8G2CKXOZ",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2024-10-11T21:12:37"
+    },
+    {
+      "id": 70,
+      "plate": "UNJ9B6G6V7X8VTLAF",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2024-10-14T01:34:49"
+    },
+    {
+      "id": 71,
+      "plate": "JJN7Q3D7D9G2JBNKA",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2024-03-17T10:48:24"
+    },
+    {
+      "id": 72,
+      "plate": "SJA0I6U3T4U6BILKA",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2024-05-19T09:08:30"
+    },
+    {
+      "id": 73,
+      "plate": "EZH7Q6P6Y4J4MNLNY",
+      "model": "Iveco Daily",
+      "capacity": 20,
+      "lastMaintenance": "2024-08-03T18:33:38"
+    },
+    {
+      "id": 74,
+      "plate": "XHC7M3C0D8D7QQKDJ",
+      "model": "Volare W9",
+      "capacity": 60,
+      "lastMaintenance": "2023-07-22T12:18:32"
+    },
+    {
+      "id": 75,
+      "plate": "VYJ9O7D1O6X7NMBCH",
+      "model": "Sprinter",
+      "capacity": 50,
+      "lastMaintenance": "2025-03-25T12:11:42"
+    },
+    {
+      "id": 76,
+      "plate": "UQC5L8W4J0J4VTECT",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 20,
+      "lastMaintenance": "2023-09-29T15:33:47"
+    },
+    {
+      "id": 77,
+      "plate": "QZC0E0R7D7V6ESPWO",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2024-10-21T08:06:28"
+    },
+    {
+      "id": 78,
+      "plate": "SRE4F1F1Z0Y2RDLOY",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2023-12-19T09:31:46"
+    },
+    {
+      "id": 79,
+      "plate": "DVY1M5M4V8J1SNRLI",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2023-11-25T19:34:54"
+    },
+    {
+      "id": 80,
+      "plate": "RPA5T0S9T5T9YPYRO",
+      "model": "Sprinter",
+      "capacity": 20,
+      "lastMaintenance": "2024-06-19T17:22:07"
+    },
+    {
+      "id": 81,
+      "plate": "NNZ4L7O4Y7T1EBUNL",
+      "model": "F-150",
+      "capacity": 50,
+      "lastMaintenance": "2024-12-20T22:34:00"
+    },
+    {
+      "id": 82,
+      "plate": "GIA2Z3R9I3S6WGNNW",
+      "model": "Volare W9",
+      "capacity": 50,
+      "lastMaintenance": "2025-03-05T03:25:44"
+    },
+    {
+      "id": 83,
+      "plate": "VXG7P8Y4N4B5SRYBI",
+      "model": "Sprinter",
+      "capacity": 40,
+      "lastMaintenance": "2024-01-23T05:09:29"
+    },
+    {
+      "id": 84,
+      "plate": "AYX1H6V5F6L2UESTB",
+      "model": "Iveco Daily",
+      "capacity": 40,
+      "lastMaintenance": "2025-01-11T07:27:44"
+    },
+    {
+      "id": 85,
+      "plate": "IYH4P9J0O7E0ATOMX",
+      "model": "Sprinter",
+      "capacity": 30,
+      "lastMaintenance": "2024-10-25T06:53:42"
+    },
+    {
+      "id": 86,
+      "plate": "WLV6T4N7I9X4DGPVV",
+      "model": "Volare W9",
+      "capacity": 20,
+      "lastMaintenance": "2023-04-30T03:21:19"
+    },
+    {
+      "id": 87,
+      "plate": "RUW3D3H8V6N9JAIMH",
+      "model": "Volare W9",
+      "capacity": 30,
+      "lastMaintenance": "2025-03-18T08:23:24"
+    },
+    {
+      "id": 88,
+      "plate": "TDH3A7M3X3J3OKNMQ",
+      "model": "Iveco Daily",
+      "capacity": 50,
+      "lastMaintenance": "2025-03-23T23:59:13"
+    },
+    {
+      "id": 89,
+      "plate": "BNG1J9B9A3U3YDWRQ",
+      "model": "F-150",
+      "capacity": 20,
+      "lastMaintenance": "2024-02-05T11:27:14"
+    },
+    {
+      "id": 90,
+      "plate": "JCB4Y1L4B2B5KWNPF",
+      "model": "Iveco Daily",
+      "capacity": 60,
+      "lastMaintenance": "2024-01-07T22:00:51"
+    },
+    {
+      "id": 91,
+      "plate": "YOI9H5M2B2V8JIMKQ",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2024-03-21T06:16:53"
+    },
+    {
+      "id": 92,
+      "plate": "JKS4B3Z5X1L8CNGOF",
+      "model": "Sprinter",
+      "capacity": 40,
+      "lastMaintenance": "2023-11-09T15:53:08"
+    },
+    {
+      "id": 93,
+      "plate": "APL6J4T1B6M4GVBOS",
+      "model": "Volare W9",
+      "capacity": 60,
+      "lastMaintenance": "2024-02-29T03:05:42"
+    },
+    {
+      "id": 94,
+      "plate": "WNP8G7Z3J9R3OLYXC",
+      "model": "Volare W9",
+      "capacity": 40,
+      "lastMaintenance": "2025-01-21T22:13:15"
+    },
+    {
+      "id": 95,
+      "plate": "PJH2B4G9M6K8XLMCF",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 40,
+      "lastMaintenance": "2023-11-22T01:14:56"
+    },
+    {
+      "id": 96,
+      "plate": "WJN4W6D8U3K2OCHKQ",
+      "model": "Sprinter",
+      "capacity": 40,
+      "lastMaintenance": "2024-04-03T09:39:37"
+    },
+    {
+      "id": 97,
+      "plate": "ANM9C1Y1J4J5ZPAEO",
+      "model": "Volare W9",
+      "capacity": 60,
+      "lastMaintenance": "2024-03-28T17:41:49"
+    },
+    {
+      "id": 98,
+      "plate": "VHM2N1L6L6J8MINDW",
+      "model": "Sprinter",
+      "capacity": 40,
+      "lastMaintenance": "2023-06-03T01:01:03"
+    },
+    {
+      "id": 99,
+      "plate": "BNG5W6S9O4H2OKJBI",
+      "model": "Mercedes-Benz OF-1721",
+      "capacity": 30,
+      "lastMaintenance": "2024-08-26T05:40:15"
+    },
+    {
+      "id": 100,
+      "plate": "KKX6K8T5A8Y2BKJIC",
+      "model": "Sprinter",
+      "capacity": 60,
+      "lastMaintenance": "2025-03-02T06:16:04"
+    }
+  ]
