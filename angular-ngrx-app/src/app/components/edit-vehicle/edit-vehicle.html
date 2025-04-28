@@ -1,16 +1,15 @@
 <div>
   <h3>Edição de Registros</h3>
+  <button (click)="edit(1)">Editar 1 Registro</button>
+  <button (click)="edit(100)">Editar 100 Registros</button>
+  <button (click)="edit(1000)">Editar 1000 Registros</button>
+  <button (click)="edit(10000)">Editar 10000 Registros</button>
 
-  <div style="margin-top: 1rem">
-    <button (click)="editAllVehicles(1)">Editar 1 Registro</button>
-    <button (click)="editAllVehicles(100)">Editar 100 Registros</button>
-    <button (click)="editAllVehicles(1000)">Editar 1000 Registros</button>
-    <button (click)="editAllVehicles(10000)">Editar 10000 Registros</button>
-  </div>
+  <p *ngIf="editTime > 0">
+    Tempo para editar: {{ editTime.toFixed(2) }} ms
+  </p>
 
-  <p *ngIf="editTime">Tempo de edição: {{ editTime.toFixed(2) }} ms</p>
-
-  <table *ngIf="(vehicles$ | async) as vehicles">
+  <table *ngIf="vehicles$ | async as vehicles">
     <thead>
       <tr>
         <th>ID</th>
