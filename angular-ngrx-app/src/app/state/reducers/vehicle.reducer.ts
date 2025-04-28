@@ -2,6 +2,7 @@ import { createReducer, on } from '@ngrx/store';
 import {
   editVehicles,
   createVehicle,
+  deleteVehicles,
   loadVehiclesFromJson,
 } from '../actions/vehicle.actions';
 import { Vehicle } from '../../models/vehicle.model';
@@ -27,5 +28,13 @@ export const vehicleReducer = createReducer(
   on(editVehicles, (state, { vehicles }) => ({
     ...state,
     vehicles: vehicles,
-  }))
+  })),
+  on(deleteVehicles, (state, { count }) => {
+    const updatedVehicles = [...state.vehicles].slice(count);
+
+    return {
+      ...state,
+      vehicles: updatedVehicles,
+    };
+  })
 );

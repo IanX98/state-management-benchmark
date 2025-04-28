@@ -15,3 +15,8 @@ export const editVehicles = createAction(
   '[Vehicle] Edit Vehicles',
   props<{ vehicles: Vehicle[] }>()
 );
+
+export const deleteVehicles = createAction(
+  '[Vehicle] Delete Vehicles',
+  props<{ count: number }>()
+);

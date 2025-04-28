@@ -5,7 +5,6 @@ const DeleteRows = () => {
   const dispatch = useDispatch();
   const { items, status, deleteTime } = useSelector((state) => state.delete);
 
-  // Função para deletar linhas baseadas no número clicado
   const handleDelete = (count) => {
     dispatch(deleteRows(count));
   };

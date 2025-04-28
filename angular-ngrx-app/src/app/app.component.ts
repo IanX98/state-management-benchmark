@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CreateVehicleComponent } from './components/create-vehicle/create-vehicle';
 import { ReadVehicleComponent } from './components/read-vehicle/read-vehicle';
 import { EditVehicleComponent } from './components/edit-vehicle/edit-vehicle';
+import { DeleteVehicleComponent } from './components/delete-vehicle/delete-vehicle';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { EditVehicleComponent } from './components/edit-vehicle/edit-vehicle';
     CreateVehicleComponent,
     ReadVehicleComponent,
     EditVehicleComponent,
+    DeleteVehicleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
