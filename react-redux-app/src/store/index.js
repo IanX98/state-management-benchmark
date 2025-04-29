@@ -2,8 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import readReducer from './readSlice';
 import createReducer from './createSlice';
 import deleteReducer from './deleteSlice'
-import editReducer from './updateSlice';
-import searchReducer from './searchRandomOneSlice'
+import editReducer from "./updateSlice";
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +10,5 @@ export const store = configureStore({
     create: createReducer,
     delete: deleteReducer,
     edit: editReducer,
-    search: searchReducer,
   },
 });
