@@ -4,6 +4,7 @@
     <CreateVehicle />
     <ReadVehicle />
     <EditVehicle />
+    <DeleteVehicle />
   </div>
 </template>
 
@@ -11,10 +12,10 @@
 import CreateVehicle from './components/CreateVehicle.vue';
 import ReadVehicle from './components/ReadVehicle.vue'
 import EditVehicle from './components/EditVehicle.vue'
+import DeleteVehicle from './components/DeleteVehicle.vue'
 </script>
 
 <style>
-/* estilo básico opcional */
 body {
   font-family: sans-serif;
   margin: 2rem;

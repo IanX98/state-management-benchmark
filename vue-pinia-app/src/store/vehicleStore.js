@@ -8,6 +8,8 @@ export const useVehicleStore = defineStore("vehicle", {
     loadTime: 0,
     editTime: 0,
     editedCount: 0,
+    deleteTime: 0,
+    deletedCount: 0,
   }),
   actions: {
     createVehicles(count) {
@@ -58,11 +60,23 @@ export const useVehicleStore = defineStore("vehicle", {
       this.editedCount = Math.min(count, this.vehicles.length);
     },
 
+    deleteVehicles(count) {
+      const start = performance.now();
+
+      this.vehicles.splice(0, count);
+
+      const end = performance.now();
+      this.deleteTime = end - start;
+      this.deletedCount = count;
+    },
+
     clear() {
       this.vehicles = [];
       this.creationTime = 0;
       this.loadTime = 0;
       this.editTime = 0;
+      this.deletedCount = 0;
+      this.deleteTime = 0;
       this.editedCount = 0;
     },
   },
