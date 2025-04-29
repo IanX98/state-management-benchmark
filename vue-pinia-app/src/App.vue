@@ -3,12 +3,14 @@
     <h1>Gerenciamento de Veículos com Pinia</h1>
     <CreateVehicle />
     <ReadVehicle />
+    <EditVehicle />
   </div>
 </template>
 
 <script setup>
 import CreateVehicle from './components/CreateVehicle.vue';
-import ReadVehicle from  './components/ReadVehicle.vue'
+import ReadVehicle from './components/ReadVehicle.vue'
+import EditVehicle from './components/EditVehicle.vue'
 </script>
 
 <style>

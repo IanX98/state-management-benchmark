@@ -6,6 +6,8 @@ export const useVehicleStore = defineStore("vehicle", {
     vehicles: [],
     creationTime: 0,
     loadTime: 0,
+    editTime: 0,
+    editedCount: 0,
   }),
   actions: {
     createVehicles(count) {
@@ -38,10 +40,30 @@ export const useVehicleStore = defineStore("vehicle", {
       }
     },
 
+    editVehicles(count) {
+      const start = performance.now();
+
+      for (let i = 0; i < count && i < this.vehicles.length; i++) {
+        this.vehicles[i] = {
+          ...this.vehicles[i],
+          model: faker.vehicle.model(),
+          plate: faker.vehicle.vin(),
+          capacity: faker.number.int({ min: 2, max: 7 }),
+          lastMaintenance: faker.date.past().toLocaleDateString(),
+        };
+      }
+
+      const end = performance.now();
+      this.editTime = end - start;
+      this.editedCount = Math.min(count, this.vehicles.length);
+    },
+
     clear() {
       this.vehicles = [];
       this.creationTime = 0;
       this.loadTime = 0;
+      this.editTime = 0;
+      this.editedCount = 0;
     },
   },
 });
