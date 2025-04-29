@@ -5,6 +5,7 @@
     <ReadVehicle />
     <EditVehicle />
     <DeleteVehicle />
+    <SearchRandomOne/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import CreateVehicle from './components/CreateVehicle.vue';
 import ReadVehicle from './components/ReadVehicle.vue'
 import EditVehicle from './components/EditVehicle.vue'
 import DeleteVehicle from './components/DeleteVehicle.vue'
+import SearchRandomOne from './components/SearchRandomOne.vue'
 </script>
 
 <style>

@@ -10,6 +10,8 @@ export const useVehicleStore = defineStore("vehicle", {
     editedCount: 0,
     deleteTime: 0,
     deletedCount: 0,
+    searchTime: 0,
+    selectedVehicle: null,
   }),
   actions: {
     createVehicles(count) {
@@ -70,6 +72,22 @@ export const useVehicleStore = defineStore("vehicle", {
       this.deletedCount = count;
     },
 
+    findRandomVehicle() {
+      const start = performance.now();
+
+      if (this.vehicles.length === 0) {
+        this.selectedVehicle = null;
+        this.searchTime = 0;
+        return;
+      }
+
+      const index = Math.floor(Math.random() * this.vehicles.length);
+      this.selectedVehicle = this.vehicles[index];
+
+      const end = performance.now();
+      this.searchTime = end - start;
+    },
+
     clear() {
       this.vehicles = [];
       this.creationTime = 0;
@@ -78,6 +96,8 @@ export const useVehicleStore = defineStore("vehicle", {
       this.deletedCount = 0;
       this.deleteTime = 0;
       this.editedCount = 0;
+      this.searchTime = 0;
+      this.selectedVehicle = null;
     },
   },
 });
