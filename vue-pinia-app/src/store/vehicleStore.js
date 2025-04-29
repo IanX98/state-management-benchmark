@@ -2,7 +2,11 @@ import { defineStore } from "pinia";
 import { faker } from "@faker-js/faker";
 
 export const useVehicleStore = defineStore("vehicle", {
-  state: () => ({ vehicles: [], creationTime: 0 }),
+  state: () => ({
+    vehicles: [],
+    creationTime: 0,
+    loadTime: 0,
+  }),
   actions: {
     createVehicles(count) {
       const start = performance.now();
@@ -18,9 +22,26 @@ export const useVehicleStore = defineStore("vehicle", {
       const end = performance.now();
       this.creationTime = end - start;
     },
+
+    async loadFromJson(count) {
+      const start = performance.now();
+
+      try {
+        const response = await fetch(`/${count}-dataset.json`);
+        this.vehicles = await response.json();
+        const end = performance.now();
+        this.loadTime = end - start;
+      } catch (error) {
+        console.error("Erro ao carregar JSON:", error);
+        this.vehicles = [];
+        this.loadTime = 0;
+      }
+    },
+
     clear() {
       this.vehicles = [];
       this.creationTime = 0;
+      this.loadTime = 0;
     },
   },
 });
