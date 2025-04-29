@@ -16,14 +16,22 @@ const EditRows = () => {
     <div>
       <h3>Edição de Linhas com Redux</h3>
 
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-        <button onClick={() => handleEdit(1)}>Editar 1 linha</button>
-        <button onClick={() => handleEdit(100)}>Editar 100 linhas</button>
-        <button onClick={() => handleEdit(1000)}>Editar 1000 linhas</button>
-        <button onClick={() => handleEdit(10000)}>Editar 10000 linhas</button>
+      <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
+        <button onClick={() => handleEdit(1)} id="edit-1">
+          Editar 1 linha
+        </button>
+        <button onClick={() => handleEdit(100)} id="edit-100">
+          Editar 100 linhas
+        </button>
+        <button onClick={() => handleEdit(1000)} id="edit-1000">
+          Editar 1000 linhas
+        </button>
+        <button onClick={() => handleEdit(10000)} id="edit-10000">
+          Editar 10000 linhas
+        </button>
       </div>
 
-      {status === 'loading' && <p>Carregando dataset...</p>}
+      {status === "loading" && <p>Carregando dataset...</p>}
       {editTime !== null && (
         <p>
           ⏱️ Editou {editedCount} linhas em {editTime.toFixed(2)} ms
