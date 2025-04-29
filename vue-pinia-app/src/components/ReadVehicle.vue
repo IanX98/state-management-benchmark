@@ -1,10 +1,10 @@
 <template>
   <div>
     <h3>Leitura de Veículos</h3>
-    <button @click="load(1)">Ler 1 Registro</button>
-    <button @click="load(100)">Ler 100 Registros</button>
-    <button @click="load(1000)">Ler 1000 Registros</button>
-    <button @click="load(10000)">Ler 10000 Registros</button>
+    <button @click="load(1)" id="read-1">Ler 1 Registro</button>
+    <button @click="load(100)" id="read-100">Ler 100 Registros</button>
+    <button @click="load(1000)" id="read-1000">Ler 1000 Registros</button>
+    <button @click="load(10000)" id="read-10000">Ler 10000 Registros</button>
 
     <p v-if="vehicleStore.loadTime">
       Tempo de leitura: {{ vehicleStore.loadTime.toFixed(2) }} ms

@@ -1,10 +1,10 @@
 <template>
   <div>
     <h3>Criação de Veículos</h3>
-    <button @click="create(1)">Criar 1 Registro</button>
-    <button @click="create(100)">Criar 100 Registros</button>
-    <button @click="create(1000)">Criar 1000 Registros</button>
-    <button @click="create(10000)">Criar 10000 Registros</button>
+    <button @click="create(1)" id="create-1">Criar 1 Registro</button>
+    <button @click="create(100)" id="create-100">Criar 100 Registros</button>
+    <button @click="create(1000)" id="create-1000">Criar 1000 Registros</button>
+    <button @click="create(10000)" id="create-10000">Criar 10000 Registros</button>
     <p v-if="vehicleStore.creationTime">
       Tempo: {{ vehicleStore.creationTime.toFixed(2) }} ms
     </p>
