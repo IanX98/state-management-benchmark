@@ -1,9 +1,9 @@
 <div>
   <h3>Edição de Registros</h3>
-  <button (click)="edit(1)">Editar 1 Registro</button>
-  <button (click)="edit(100)">Editar 100 Registros</button>
-  <button (click)="edit(1000)">Editar 1000 Registros</button>
-  <button (click)="edit(10000)">Editar 10000 Registros</button>
+  <button (click)="edit(1)" id="edit-1">Editar 1 Registro</button>
+  <button (click)="edit(100)" id="edit-100">Editar 100 Registros</button>
+  <button (click)="edit(1000)" id="edit-1000">Editar 1000 Registros</button>
+  <button (click)="edit(10000)" id="edit-10000">Editar 10000 Registros</button>
 
   <p *ngIf="editTime > 0">
     Tempo para editar: {{ editTime.toFixed(2) }} ms

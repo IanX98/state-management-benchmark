@@ -1,10 +1,10 @@
 <div>
   <h3>Remoção de Veículos</h3>
 
-  <button (click)="delete(1)">Deletar 1 registro</button>
-  <button (click)="delete(100)">Deletar 100 registros</button>
-  <button (click)="delete(1000)">Deletar 1000 registros</button>
-  <button (click)="delete(10000)">Deletar 10000 registros</button>
+  <button (click)="delete(1)" id="delete-1">Deletar 1 registro</button>
+  <button (click)="delete(100)" id="delete-100">Deletar 100 registros</button>
+  <button (click)="delete(1000)" id="delete-1000">Deletar 1000 registros</button>
+  <button (click)="delete(10000)" id="delete-10000">Deletar 10000 registros</button>
 
   <p *ngIf="deleteTime !== null">
     Tempo para deletar: {{ deleteTime.toFixed(2) }} ms
