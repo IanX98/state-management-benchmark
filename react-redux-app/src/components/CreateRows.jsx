@@ -30,7 +30,9 @@ const CreateRows = () => {
       </div>
 
       {status === "loading" && <p>Carregando...</p>}
-      {loadTime && <p>Tempo de criação: {loadTime.toFixed(2)} ms</p>}
+      {loadTime && (
+        <p id="create-time">Tempo de criação: {loadTime.toFixed(2)} ms</p>
+      )}
 
       {status === "succeeded" && items.length > 0 && (
         <DataTable items={items} />

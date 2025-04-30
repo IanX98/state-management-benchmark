@@ -5,7 +5,7 @@
   <button (click)="load(1000)" id="read-1000">Ler 1000 linhas</button>
   <button (click)="load(10000)" id="read-10000">Ler 10000 linhas</button>
 
-  <p *ngIf="loadTime">Tempo de carregamento: {{ loadTime.toFixed(2) }} ms</p>
+  <p *ngIf="loadTime" id="read-time">Tempo de carregamento: {{ loadTime.toFixed(2) }} ms</p>
 
   <table *ngIf="vehicles$ | async as vehicles">
     <thead>

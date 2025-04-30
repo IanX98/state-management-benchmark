@@ -5,7 +5,7 @@
   <button (click)="edit(1000)" id="edit-1000">Editar 1000 Registros</button>
   <button (click)="edit(10000)" id="edit-10000">Editar 10000 Registros</button>
 
-  <p *ngIf="editTime > 0">
+  <p *ngIf="editTime > 0" id="edit-time">
     Tempo para editar: {{ editTime.toFixed(2) }} ms
   </p>
 

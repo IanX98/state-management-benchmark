@@ -27,7 +27,9 @@ const DeleteRows = () => {
       </button>
 
       {status === "loading" && <p>Carregando...</p>}
-      {deleteTime && <p>Tempo de deleção: {deleteTime.toFixed(2)} ms</p>}
+      {deleteTime && (
+        <p id="delete-time">Tempo de deleção: {deleteTime.toFixed(2)} ms</p>
+      )}
 
       {status === "succeeded" && items.length > 0 && (
         <DataTable items={items} />

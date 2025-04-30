@@ -5,7 +5,7 @@
     <button @click="edit(100)" id="edit-100">Editar 100 linhas</button>
     <button @click="edit(1000)" id="edit-1000">Editar 1000 linhas</button>
     <button @click="edit(10000)" id="edit-10000">Editar 10000 linhas</button>
-    <p v-if="vehicleStore.editTime > 0">
+    <p v-if="vehicleStore.editTime > 0" id="edit-time">
       Tempo de edição: {{ vehicleStore.editTime.toFixed(2) }} ms<br />
       Linhas editadas: {{ vehicleStore.editedCount }}
     </p>

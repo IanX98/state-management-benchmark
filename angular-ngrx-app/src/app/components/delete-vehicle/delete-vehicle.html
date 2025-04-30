@@ -6,7 +6,7 @@
   <button (click)="delete(1000)" id="delete-1000">Deletar 1000 registros</button>
   <button (click)="delete(10000)" id="delete-10000">Deletar 10000 registros</button>
 
-  <p *ngIf="deleteTime !== null">
+  <p *ngIf="deleteTime !== null" id="delete-time">
     Tempo para deletar: {{ deleteTime.toFixed(2) }} ms
   </p>
 

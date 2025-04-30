@@ -5,7 +5,7 @@
     <button @click="create(100)" id="create-100">Criar 100 Registros</button>
     <button @click="create(1000)" id="create-1000">Criar 1000 Registros</button>
     <button @click="create(10000)" id="create-10000">Criar 10000 Registros</button>
-    <p v-if="vehicleStore.creationTime">
+    <p v-if="vehicleStore.creationTime" id="create-time">
       Tempo: {{ vehicleStore.creationTime.toFixed(2) }} ms
     </p>
 

@@ -29,7 +29,9 @@ const DatasetLoader = () => {
       <button onClick={() => handleRead(clearReadData())}>Limpar</button>
 
       {status === "loading" && <p>Carregando...</p>}
-      {loadTime && <p>Tempo de carregamento: {loadTime.toFixed(2)} ms</p>}
+      {loadTime && (
+        <p id="read-time">Tempo de carregamento: {loadTime.toFixed(2)} ms</p>
+      )}
 
       {status === "succeeded" && items.length > 0 && (
         <DataTable items={items} />

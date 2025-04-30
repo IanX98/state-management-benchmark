@@ -6,7 +6,7 @@
     <button @click="load(1000)" id="read-1000">Ler 1000 Registros</button>
     <button @click="load(10000)" id="read-10000">Ler 10000 Registros</button>
 
-    <p v-if="vehicleStore.loadTime">
+    <p v-if="vehicleStore.loadTime" id="read-time">
       Tempo de leitura: {{ vehicleStore.loadTime.toFixed(2) }} ms
     </p>
 

@@ -33,7 +33,7 @@ const EditRows = () => {
 
       {status === "loading" && <p>Carregando dataset...</p>}
       {editTime !== null && (
-        <p>
+        <p id="edit-time">
           ⏱️ Editou {editedCount} linhas em {editTime.toFixed(2)} ms
         </p>
       )}

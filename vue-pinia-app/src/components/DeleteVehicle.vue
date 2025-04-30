@@ -5,7 +5,7 @@
     <button @click="remove(100)" id="delete-100">Remover 100 linhas</button>
     <button @click="remove(1000)" id="delete-1000">Remover 1000 linhas</button>
     <button @click="remove(10000)" id="delete-10000">Remover 10000 linhas</button>
-    <p v-if="vehicleStore.deleteTime > 0">
+    <p v-if="vehicleStore.deleteTime > 0" id="delete-time">
       Tempo de remoção: {{ vehicleStore.deleteTime.toFixed(2) }} ms<br />
       Linhas removidas: {{ vehicleStore.deletedCount }}
     </p>

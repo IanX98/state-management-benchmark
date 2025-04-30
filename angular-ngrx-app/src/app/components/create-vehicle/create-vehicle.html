@@ -4,7 +4,7 @@
   <button (click)="create(1000)" id="create-1000">Criar 1000 Registros</button>
   <button (click)="create(10000)" id="create-10000">Criar 10000 Registros</button>
 
-  <p *ngIf="creationTime > 0">Tempo de criação: {{ creationTime.toFixed(2) }} ms</p>
+  <p *ngIf="creationTime > 0" id="create-time">Tempo de criação: {{ creationTime.toFixed(2) }} ms</p>
 
   <table *ngIf="createdVehicles$ | async as vehicles">
     <thead>
