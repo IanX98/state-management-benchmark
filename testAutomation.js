@@ -1,3 +1,4 @@
+const os = require("os");
 const puppeteer = require("puppeteer");
 const readline = require("readline");
 
@@ -40,6 +41,26 @@ const measureOperation = async (page, baseURL, operation, count) => {
   const timeText = await page.$eval(timeId, (el) => el.textContent);
   const match = timeText?.match(/(\d+(\.\d+)?)/);
   return match ? parseFloat(match[1]) : NaN;
+};
+
+const getSystemUsage = () => {
+  const totalMemMB = os.totalmem() / 1024 / 1024;
+  const freeMemMB = os.freemem() / 1024 / 1024;
+  const usedMemMB = totalMemMB - freeMemMB;
+
+  const cpus = os.cpus();
+  const cpuUsage = cpus.map((cpu) => {
+    const total = Object.values(cpu.times).reduce((acc, t) => acc + t, 0);
+    const idle = cpu.times.idle;
+    return ((total - idle) / total) * 100;
+  });
+  const avgCpuUsage = cpuUsage.reduce((a, b) => a + b, 0) / cpuUsage.length;
+
+  return {
+    memoryUsed: usedMemMB.toFixed(2),
+    memoryTotal: totalMemMB.toFixed(2),
+    cpuAvg: avgCpuUsage.toFixed(2),
+  };
 };
 
 (async () => {
@@ -90,4 +111,12 @@ const measureOperation = async (page, baseURL, operation, count) => {
   console.log(`Média: ${average.toFixed(2)} ms`);
   console.log(`Mínimo: ${min.toFixed(2)} ms`);
   console.log(`Máximo: ${max.toFixed(2)} ms`);
+
+  const systemStats = getSystemUsage();
+
+  console.log(`\n--- Uso de Sistema ---`);
+  console.log(
+    `Uso de memória: ${systemStats.memoryUsed} MB de ${systemStats.memoryTotal} MB`
+  );
+  console.log(`Uso médio de CPU: ${systemStats.cpuAvg}%`);
 })();
