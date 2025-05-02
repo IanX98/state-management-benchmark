@@ -41,6 +41,16 @@ const deleteSlice = createSlice({
       state.deleteTime = end - start;
     },
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(loadDeleteDataset.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(loadDeleteDataset.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.items = action.payload;
+      });
+  },
 });
 
 export const { deleteRows } = deleteSlice.actions;

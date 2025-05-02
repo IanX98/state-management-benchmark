@@ -1,3 +1,4 @@
+import DataTable from "./DataTable";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteRows, loadDeleteDataset } from "../store/deleteSlice";
 
