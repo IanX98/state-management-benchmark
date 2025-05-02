@@ -29,8 +29,17 @@ const calculateMetrics = (times) => {
 };
 
 // Mede o tempo de execução de uma operação
-const measureOperation = async (page, baseURL, operation, count) => {
+const measureOperation = async (page, baseURL, operation, count, framework) => {
   await page.goto(baseURL);
+
+  const angularCase =
+    framework === "angular" && (operation === "edit" || operation === "delete");
+  if (angularCase) {
+    const createButtonId = `#create-${count}`;
+    await page.waitForSelector(createButtonId);
+    await page.click(createButtonId);
+  }
+
   const buttonId = `#${operation}-${count}`;
   const timeId = `#${operation}-time`;
 
@@ -95,7 +104,13 @@ const getSystemUsage = () => {
   for (let i = 0; i < iterations; i++) {
     console.log(`Iteração ${i + 1} de ${iterations}`);
     try {
-      const t = await measureOperation(page, baseURL, operation, count);
+      const t = await measureOperation(
+        page,
+        baseURL,
+        operation,
+        count,
+        framework
+      );
       times.push(t);
       console.log(`Tempo: ${t.toFixed(2)} ms`);
     } catch (err) {
