@@ -27,7 +27,7 @@ const DeleteRows = () => {
       </button>
 
       {status === "loading" && <p>Carregando...</p>}
-      {deleteTime && (
+      {deleteTime !== null && (
         <p id="delete-time">Tempo de deleção: {deleteTime.toFixed(2)} ms</p>
       )}
 

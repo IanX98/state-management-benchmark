@@ -5,7 +5,7 @@ import DataTable from './DataTable';
 
 const EditRows = () => {
   const dispatch = useDispatch();
-  const { items, status, editTime, editedCount } = useSelector((state) => state.edit);
+  const { items, status, editTime } = useSelector((state) => state.edit);
 
   const handleEdit = async (count) => {
     await dispatch(loadEditDataset(count));
