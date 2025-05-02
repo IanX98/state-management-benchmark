@@ -30,7 +30,7 @@ const CreateRows = () => {
       </div>
 
       {status === "loading" && <p>Carregando...</p>}
-      {loadTime && (
+      {loadTime !== null && (
         <p id="create-time">Tempo de criação: {loadTime.toFixed(2)} ms</p>
       )}
 
