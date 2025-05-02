@@ -1,5 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { faker } from "@faker-js/faker";
+
+export const loadDeleteDataset = createAsyncThunk(
+  "delete/loadDataset",
+  async (count) => {
+    const response = await fetch(`/${count}-dataset.json`);
+    const data = await response.json();
+    return data;
+  }
+);
 
 const generateData = (count) => {
   return Array.from({ length: count * 2 }, (_, i) => ({
@@ -27,7 +36,7 @@ const deleteSlice = createSlice({
     deleteRows(state, action) {
       const count = action.payload;
       const start = performance.now();
-      state.items = state.items.slice(count); 
+      state.items = state.items.slice(count);
       const end = performance.now();
       state.deleteTime = end - start;
     },

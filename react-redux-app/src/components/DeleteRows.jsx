@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
-import { deleteRows } from "../store/deleteSlice";
+import { deleteRows, loadDeleteDataset } from "../store/deleteSlice";
 
 const DeleteRows = () => {
   const dispatch = useDispatch();
   const { items, status, deleteTime } = useSelector((state) => state.delete);
 
-  const handleDelete = (count) => {
+  const handleDelete = async (count) => {
+    await dispatch(loadDeleteDataset(count));
     dispatch(deleteRows(count));
   };
 
