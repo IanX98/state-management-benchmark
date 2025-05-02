@@ -33,9 +33,7 @@ const EditRows = () => {
 
       {status === "loading" && <p>Carregando dataset...</p>}
       {editTime !== null && (
-        <p id="edit-time">
-          ⏱️ Editou {editedCount} linhas em {editTime.toFixed(2)} ms
-        </p>
+        <p id="edit-time">Tempo de edição: {editTime.toFixed(2)} ms</p>
       )}
 
       {items.length > 0 && <DataTable items={items} />}
