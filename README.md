@@ -1,6 +1,6 @@
 # Benchmark de Bibliotecas de Gerenciamento de Estado: Redux, NgRx e Pinia
 
-Este projeto tem como objetivo comparar o desempenho das bibliotecas de gerenciamento de estado Redux (React), NgRx (Angular) e Pinia (Vue.js) em aplicações de página única (SPAs). Foram realizados testes de tempo e consumo de recursos (CPU e memória) para operações típicas como criação, leitura, atualização e exclusão de registros em diferentes escalas (1, 100, 1000 e 10.000 linhas).
+Este projeto foi desenvolvido para fins acadêmicos como parte de um trabalho de conclusão de curso (TCC) de análise comparativa de bibliotecas de gerenciamento de estado. Esse repositório tem como objetivo comparar o desempenho das bibliotecas de gerenciamento de estado Redux (React), NgRx (Angular) e Pinia (Vue.js) em aplicações de página única (SPAs). Foram realizados testes de tempo e consumo de recursos (CPU e memória) para operações típicas como criação, leitura, atualização e exclusão de registros em diferentes escalas (1, 100, 1000 e 10.000 linhas).
 
 ## 📦 Estrutura do Projeto
 
@@ -32,26 +32,25 @@ state-management-benchmark/
 
 ```bash
 npm install
-cd react-redux && npm install
-cd ../angular-ngrx && npm install
-cd ../vue-pinia && npm install
+cd react-redux-app && npm install
+cd ../angular-ngrx-app && npm install
+cd ../vue-pinia-app && npm install
 ```
 
-2. Execute as aplicações localmente (cada uma em uma porta diferente, ex: 3000, 4200, 8080):
+2. Execute as aplicações localmente (cada uma em uma porta diferente, 5173, 4200, 5174):
 
 ```bash
-cd react-redux && npm start
+cd react-redux-app && npm run dev
 # Em outro terminal:
-cd angular-ngrx && ng serve
+cd angular-ngrx-app && ng serve
 # Em outro terminal:
-cd vue-pinia && npm run dev
+cd vue-pinia-app && npm run run dev
 ```
 
 3. Execute os testes automatizados:
 
 ```bash
-cd scripts
-node run-benchmark.js
+node testAutomation.js
 ```
 
 O script de benchmark coleta o tempo de execução, uso de CPU e uso de memória para cada operação, e gera relatórios em JSON/CSV dentro da pasta results/.
@@ -62,7 +61,6 @@ O script de benchmark coleta o tempo de execução, uso de CPU e uso de memória
 * Leitura de registros (read)
 * Atualização de registros (edit)
 * Exclusão de registros (delete)
-* Busca aleatória (random select)
 
 Cada operação foi testada com 1, 100, 1000 e 10.000 registros.
 
@@ -73,20 +71,3 @@ Cada operação foi testada com 1, 100, 1000 e 10.000 registros.
 * 🧠 Uso médio de memória (em MB)
 
 Essas métricas foram obtidas com `performance.now()` para marcação de tempo e monitoramento via process/Chrome DevTools.
-
-## ✅ Resultados
-
-Os resultados brutos podem ser consultados na pasta `results/`, e foram utilizados para gerar análises comparativas e gráficos de boxplot que demonstram a performance relativa de cada biblioteca.
-
-Para ver os gráficos e análise completa, consulte o relatório de benchmark gerado com base nesses testes.
-
-## 📚 Referências
-
-* Szymanek, A., & Pańczyk, A. (2021). Performance comparison of popular JavaScript frameworks and libraries.
-* Redux: [https://redux.js.org](https://redux.js.org)
-* NgRx: [https://ngrx.io](https://ngrx.io)
-* Pinia: [https://pinia.vuejs.org](https://pinia.vuejs.org)
-
-## 👨‍💼 Autor
-
-Este projeto foi desenvolvido para fins acadêmicos como parte de um trabalho de conclusão de curso (TCC) de análise comparativa de bibliotecas de gerenciamento de estado.
