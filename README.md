@@ -1,6 +1,6 @@
 # Benchmark de Bibliotecas de Gerenciamento de Estado: Redux, NgRx e Pinia
 
-Este projeto foi desenvolvido para fins acadêmicos como parte de um trabalho de conclusão de curso (TCC) de análise comparativa de bibliotecas de gerenciamento de estado. Esse repositório tem como objetivo comparar o desempenho das bibliotecas de gerenciamento de estado Redux (React), NgRx (Angular) e Pinia (Vue.js) em aplicações de página única (SPAs). Foram realizados testes de tempo e consumo de recursos (CPU e memória) para operações típicas como criação, leitura, atualização e exclusão de registros em diferentes escalas (1, 100, 1000 e 10.000 linhas).
+Este projeto foi desenvolvido para fins acadêmicos como parte de um trabalho de conclusão de curso (TCC) de análise comparativa de bibliotecas de gerenciamento de estado. 
 
 ## 📦 Estrutura do Projeto
 
@@ -8,12 +8,10 @@ O projeto está organizado da seguinte forma:
 
 ```
 state-management-benchmark/
-├── react-redux/        # Aplicação React com Redux
-├── angular-ngrx/       # Aplicação Angular com NgRx
-├── vue-pinia/          # Aplicação Vue com Pinia
+├── react-redux-app/        # Aplicação React com Redux
+├── angular-ngrx-app/       # Aplicação Angular com NgRx
+├── vue-pinia-app/          # Aplicação Vue com Pinia
 ├── datasets/           # Arquivos JSON com os dados de teste
-├── scripts/            # Scripts de automação dos testes (ex: Puppeteer)
-├── results/            # Saída dos resultados (tempo, CPU, memória)
 └── README.md
 ```
 
@@ -33,8 +31,8 @@ state-management-benchmark/
 ```bash
 npm install
 cd react-redux-app && npm install
-cd ../angular-ngrx-app && npm install
-cd ../vue-pinia-app && npm install
+cd angular-ngrx-app && npm install
+cd vue-pinia-app && npm install
 ```
 
 2. Execute as aplicações localmente (cada uma em uma porta diferente, 5173, 4200, 5174):
