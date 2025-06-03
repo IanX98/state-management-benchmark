@@ -51,8 +51,6 @@ cd vue-pinia-app && npm run run dev
 node testAutomation.js
 ```
 
-O script de benchmark coleta o tempo de execução, uso de CPU e uso de memória para cada operação, e gera relatórios em JSON/CSV dentro da pasta results/.
-
 ## 📊 Operações Avaliadas
 
 * Criação de registros (create)
